@@ -45,8 +45,8 @@ return array(
      */ 
     'bjyauthorize' => array(
         'guards' => array(
-            'BjyAuthorize\Guard\Route' => array(
-                array('route' => 'zfcadmin', 'roles' => array('admin')),
+            'BjyAuthorize\Guard\Controller' => array(
+                array('controller' => 'ZfcAdmin\Controller\AdminController', 'roles' => array('admin')),
             ),
         ),
     ),
@@ -54,6 +54,7 @@ return array(
     /**
      * Default ZfcRbac configuration for RBAC
      */
+	/*
     'zfcrbac' => array(
         'firewall_route' => true,
         'firewalls' => array(
@@ -62,4 +63,5 @@ return array(
             )
         ),
     ),
+    */
 );
